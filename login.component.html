@@ -1,0 +1,20 @@
+<body>
+    <h2>LOGIN FORM</h2>
+<div class="container">
+<form [formGroup]="loginForm"  (ngSubmit)="login()">
+    <div class="login-body" >
+        <label for="floatingInput">User Name</label>
+        <input type="text" class="form-control" name="username" formControlName="username"  placeholder="Enter User name" id="uname">
+        <label for="floatingInput">Password</label>
+        <input type="password" class="form-control" name="password" formControlName="password" placeholder="Password">
+        <input type="submit" class="btn btn-primary w-100" value="Login" name="" style="margin-top:10px">
+    </div>
+
+   </form>
+    
+   <p>New User?
+   <a href="/register">Register here</a></p>
+</div>
+</body>
+
+   

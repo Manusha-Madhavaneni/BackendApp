@@ -1,0 +1,48 @@
+<body>
+  <h2>REGISTER HERE!</h2>
+<div class="container" >
+<form class=" shadow p-3 mb-5  " #empform="ngForm" (ngSubmit)="register(user)"
+        style="text-align: center; display: flex; justify-content: space-evenly; align-items: center;  flex-direction: column;">
+        <p><b>Enter valid details</b></p>
+        <table>
+
+             
+            <tr> 
+
+                <td>Name</td>
+                <td><input type="text" name="userName" placeholder="enter your name" #userName="ngModel" minlength="5"
+                        maxlength="15" [(ngModel)]="user.userName" required></td>
+            </tr>
+
+    
+            <tr>
+                <td>Email</td>
+                <td><input type="email" name="emailId" [(ngModel)]="user.emailId" ngModel placeholder="enter your email address" #emailId="ngModel" required></td>
+            </tr>
+
+           
+            <tr>
+                <td>Gender</td>
+                <td><input type="radio" name="gender" [(ngModel)]="user.gender" ngModel value="male" #gender="ngModel" >Male &nbsp;
+                  <input type="radio" name="gender" [(ngModel)]="user.gender" ngModel value="Female" #gender="ngModel" >Female
+                </td>
+            </tr>
+
+            
+            <tr>
+                <td>Phone Number</td>
+                <td><input type="text" name="mobileNumber" [(ngModel)]="user.mobileNumber" ngModel  placeholder="enter your mobile number" #mobileNumber="ngModel" required minlength="10" maxlength="10"></td>
+            </tr>
+            <tr>
+              <td>Password</td>
+              <td><input type="password" name="password" [(ngModel)]="user.password" ngModel placeholder="enter your password" #password="ngModel" required minlength="3" ></td>
+          </tr>
+
+        </table>
+        <br>
+
+        <input type="submit" class="btn btn-primary" value="Register">
+        
+    </form>
+  </div>
+  </body>

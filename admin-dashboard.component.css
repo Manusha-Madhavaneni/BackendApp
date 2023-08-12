@@ -1,0 +1,24 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+   
+   
+}
+
+body > div{
+    border: 1px solid black;
+    
+}
+
+
+
+.router{
+    min-height: 100vh;
+}
